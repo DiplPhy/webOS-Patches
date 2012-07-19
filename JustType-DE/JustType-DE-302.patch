@@ -1,0 +1,47 @@
+Name: Just type - DE
+Version: 3.0.2-2
+Author: DiplPhy
+Description: Changes 'Einfach lostippen...' to 'Just type...' for german TouchPad.
+
+--- .orig/usr/lib/luna/system/luna-applauncher/resources/de_de/appinfo.json
++++ /usr/lib/luna/system/luna-applauncher/resources/de_de/appinfo.json
+@@ -1,5 +1,5 @@
+ {
+-	"appmenu": "Einfach lostippen",
++	"appmenu": "Just type",
+ 	"icon": "../../icon.png",
+ 	"id": "com.palm.launcher",
+ 	"main": "../../index.html",
+	
+--- .orig/usr/lib/luna/system/luna-applauncher/app/JustType.js
++++ /usr/lib/luna/system/luna-applauncher/app/JustType.js
+@@ -7,7 +7,7 @@
+ 	components:[
+ 		{
+ 				kind: "RichText",
+-				hint:$L("Just type..."),
++				hint:$L("Just type... "),
+ 				name: "searchField",
+ 				richContent:false,
+ 				autoCapitalize:"lowercase",
+--- .orig/usr/lib/luna/system/luna-applauncher/appinfo.json
++++ /usr/lib/luna/system/luna-applauncher/appinfo.json
+@@ -1,6 +1,6 @@
+ {
+ 	"title": "Launcher",
+-	"appmenu": "Just Type",
++	"appmenu": "Just type",
+ 	"type": "web",
+ 	"main": "index.html",
+ 	"id": "com.palm.launcher",
+--- .orig/usr/palm/sysmgr/localization/de_de/strings.json
++++ /usr/palm/sysmgr/localization/de_de/strings.json
+@@ -40,7 +40,7 @@
+ 	"Full Erase": "Vollständig löschen",
+ 	"Help": "Hilfe",
+ 	"IP configuration failed": "IP-Konfiguration fehlgeschlagen",
+-	"Just type...": "Einfach lostippen...",
++	"Just type...": "Just type... ",
+ 	"Memory critical, too many cards!": "Speicher fast voll, zu viele Karten",
+ 	"Memory low, too many cards!": "Wenig Speicher verfügbar, zu viele Karten!",
+ 	"Must be at least %d characters": "Muss mindestens %d Zeichen enthalten",

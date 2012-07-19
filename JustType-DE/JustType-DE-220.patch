@@ -1,0 +1,38 @@
+Name: Just type - DE
+Version: 2.2.0-1
+Author: DiplPhy
+Description: Changes 'Einfach lostippen...' to 'Just type...' for german Pre 3.
+
+--- .orig/usr/lib/luna/system/luna-applauncher/resources/de/appinfo.json
++++ /usr/lib/luna/system/luna-applauncher/resources/de/appinfo.json
+@@ -1,5 +1,5 @@
+ {
+-	"appmenu": "Einfach lostippen",
++	"appmenu": "Just type",
+ 	"icon": "../../icon.png",
+ 	"id": "com.palm.launcher",
+ 	"main": "../../index.html",
+--- .orig/usr/lib/luna/system/luna-applauncher/resources/de/strings.json
++++ /usr/lib/luna/system/luna-applauncher/resources/de/strings.json
+@@ -8,7 +8,7 @@
+ 	"Delete": "Löschen",
+ 	"Deleting #{appName} also removes:": "Beim Löschen von #{appName} wird auch Folgendes entfernt:   ",
+ 	"Done": "Fertig",
+-	"Just Type": "Einfach lostippen",
++	"Just Type": Just type",
+ 	"K": "KB",
+ 	"Launch & Search": "Starten und suchen",
+ 	"Launcher": "Startbildschirm",
+--- .orig/usr/palm/sysmgr/localization/de_de/strings.json
++++ /usr/palm/sysmgr/localization/de_de/strings.json
+@@ -24,8 +24,8 @@
+ 	"Extended Network": "Erweitertes Netzwerk",
+ 	"Full Erase": "Vollständig löschen",
+ 	"Help": "Hilfe",
+-	"Just type": "Einfach lostippen",
+-	"Just type...": "Einfach lostippen...",
++	"Just type": "Just type",
++	"Just type...": "Just type...",
+ 	"Memory": "Speicher",
+ 	"Memory critical, too many cards!": "Speicher fast voll, zu viele Karten",
+ 	"Memory low, too many cards!": "Wenig Speicher verfügbar, zu viele Karten!",
